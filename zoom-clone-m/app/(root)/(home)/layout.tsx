@@ -3,7 +3,15 @@ import React, { ReactNode } from 'react'
 
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "Zoom Clone",
+  description: "A zoom clone conferening app using Next.js 14, Stream, and Tailwind CSS",
+  icons: {
+    icon: '/icons/logo.svg'
+  }
+};
 
 const HomeLayout = ({ children }: {children: ReactNode}) => {
   return (
